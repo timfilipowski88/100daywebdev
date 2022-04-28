@@ -1,0 +1,40 @@
+This is my practice commit!
+
+
+To initilize this as a git repository
+git init 
+
+To Clear terminal
+clear
+
+To get Git Status
+git status
+
+To add files to git staging area
+git add <file>
+
+To add all changed files to staging area
+git add .
+
+To Commit staged files
+git commit -m "added test.text"
+
+To see commit logs
+git log
+
+To Edit Global User Configurations
+git config --global --edit
+^to escape this menu
+"escape" then :q!
+
+To check username and user email
+git config --global user.name
+git config --global user.email
+
+To Edit username and user email
+git config --global user.name "new name"
+git config --global user.email "new email"
+
+
+
+

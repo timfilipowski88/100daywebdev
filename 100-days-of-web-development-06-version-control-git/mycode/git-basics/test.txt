@@ -35,6 +35,39 @@ To Edit username and user email
 git config --global user.name "new name"
 git config --global user.email "new email"
 
+To View branch name
+git branch
+
+To Edit a branch name
+git branch -m newName
+
+To Create a new brach in git based on the branch you are in
+git checkout -b newFeature
+
+To Merge move to the main b ranch
+git checkout main 
+Then merge
+git merge newFeature
+
+To Delete a file and have it be already staged
+git rm fileName
+
+To Reset the Head Pointer from the latest commit to a previous one
+git reset --hard HEAD~1    where 1 is the number of commits you are going back
+
+To Delete branch head to a different branch than the one you want to Delete
+git branch -D newFeature   deletes newFeature branch
+
+To Revert unstaged changes amd revert to the latest commit
+git checkout -- .
+
+To Revert staged changes to the unstaged status (must then unstaged them as well)
+git reset fileName
+
+To Clone a repository (add the ending  . to make sure the files go into the current folder instead of creating a new folder)
+git clone https://githubaddress .
+
+
 
 
 

@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(218, 247, 243);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+input {
+
+}
+
+header {
+  text-align: center;
+}
+
+main {
+}
+
+form {
+  width: 30%;
+  margin: 1.5rem auto;
+  background-color: rgb(199, 232, 228);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control-group {
+  display: flex;
+  flex-direction: column;
+  margin: .5rem 0;
+}
+
+#accept {
+  margin: 1rem 0;
+}
+
+#button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  font: inherit;
+  padding: .25rem .5rem;
+  margin: .25rem;
+  border: 1px solid rgb(24, 30, 29);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: rgb(14, 44, 126);
+  color:rgb(218, 247, 243)
+}
+

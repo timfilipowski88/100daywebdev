@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/forms-challenge-page/styles.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="">
+        <h2>How can we help you?</h2>
+        <section>
+          <ul>
+            <li class="form-control-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                value="name"
+                required
+                placeholder="Tim Filipowski"
+              />
+            </li>
+            <li class="form-control-group">
+              <label for="email">Your E-mail Address</label>
+              <input
+                type="email"
+                id="email"
+                value="email"
+                required
+                placeholder="tim@mail.com"
+              />
+            </li>
+            <li class="form-control-group">
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="number"
+                id="phone"
+                value="phone"
+                required
+                placeholder="765-666-9999"
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="form-control-group">
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="8"
+            required
+          ></textarea>
+        </section>
+        <section class="form-control-group">
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="friend">Friend</option>
+            <option value="web">Web Search</option>
+            <option value="newspaper">Newspaper</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="reply" id="call" />
+              <label for="call">Call Me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="email" />
+              <label for="email">Email Me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="no-reply" />
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section id="accept">
+          <input type="checkbox" />
+          <label for="accept">Accept Terms</label>
+        </section>
+        <section id="button-wrapper">
+          <button type="reset">Clear</button>
+          <button type="submit" class="btn-dark">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

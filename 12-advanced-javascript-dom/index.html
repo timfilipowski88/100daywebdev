@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- defer is needed so that the entire document loads and then the defered code gets loaded -->
+  <!-- <script src="/12-advanced-javascript-dom/old-app.js" defer></script> -->
+  <link rel="stylesheet" href="/12-advanced-javascript-dom/styles.css">
+  <script src="/12-advanced-javascript-dom/demo.js" defer></script>
+  <title>Advanced Javascript</title>
+</head>
+<body>
+  <!--     for old-app.js
+    <h1 id="first-title">This is a title.</h1>
+  <p>This is New!</p>
+  <p class="highlighted-paragraph">
+    This is a <a href="#" id="external-link">link</a>
+  </p> -->
+
+  <!-- for new-app.js -->
+  <!-- <p>Click me!</p>
+  <input type="text"> -->
+
+  <form>
+    <div class="control">
+      <label for="product-name">Product Name</label>
+      <input type="text" id="product-name" name="product-name" maxlength="60">
+      <span id="charcount">
+        <span id="remaining-chars">60</span>/60
+      </span>
+    </div>
+    <button>Submit</button>
+  </form>
+
+</body>
+</html>

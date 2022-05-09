@@ -24,8 +24,8 @@ function eventClick(event) {
 //    - Select BOTH paragraphs by drilling into the document and "navigating" to the
 //      mentioned elements
 //    - If you struggle with DOM drilling, use "ids" instead but watch the solution!
-// const firstParagraph = document.body.children[0].children[2].children[2].children[1];
-// const thirdParagraph = document.body.children[0].children[2].children[2].children[3];
+// const firstParagraph = document.body.children[2].children[1];
+// const thirdParagraph = document.body.children[2].children[3];
 // console.log(firstParagraph);
 
 const firstParagraphId = document.getElementById('first-paragraph');

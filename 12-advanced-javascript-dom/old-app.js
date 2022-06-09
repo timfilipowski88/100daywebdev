@@ -1,4 +1,4 @@
-// // To Get javascript document object
+// // To Get javascript document object use .dir() built in method
 // // console.dir(document); document could be substituted for any other node/element
 
 // // document.body.children[1].children[0].href = 'https://google.com';

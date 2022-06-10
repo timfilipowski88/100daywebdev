@@ -8,8 +8,18 @@ function updateRemainingCharacters(event) {
   const enteredTextLength = enteredText.length;
 
   const remainingCharacters = maxAllowedChars - enteredTextLength;
-  // const can have their attributes changed in this case because remainingCharsElement is still the same object
+  // const can have their attributes changed in this case because they are redefined at each function call
   remainingCharsElement.textContent = remainingCharacters;
+  if (remainingChars === 0) {
+    productNameInputElement.classList.add('error');
+    remainingCharsElement.classList.add('erorr');
+  } else if (remainingCharacters <= 10) {
+    productNameInputElement.classList.add('warning');
+    remainingCharsElement.classList.add('warning');
+  } else {
+    productNameInputElement.classList.remove('warning', 'error');
+    remainingCharsElement.classList.remove('warning', 'error');
+  }
 }
 
 productNameInputElement.addEventListener('input', updateRemainingCharacters);

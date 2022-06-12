@@ -1,0 +1,30 @@
+.modal {
+  position: fixed; /* keeps this on top of everything */
+  top: 20%; /* moves it down 20% */
+  left: 5%; /* this plus the 90% width assures that it is centered from both sides */
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .modal {
+    /* calc(starting position +- change) */
+    left: calc(50% - 20rem);
+    /* doing it with calc for half the fixed width will help to always keep it centered */
+    width: 40rem;
+  }
+}
